@@ -1,7 +1,7 @@
 txt = "The quick brown fox jumps over the lazy dog."
 
 ###############################################################################
-# TODO: 1. (2 pts)
+# DONE: 1. (2 pts)
 #
 #   Write a function called is_positive() that takes one parameter:
 #     - number (float)
@@ -14,8 +14,15 @@ txt = "The quick brown fox jumps over the lazy dog."
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
 
+def is_positive(number):
+    if number >=0: 
+        return True
+    else: 
+        return False 
+
+
 ###############################################################################
-# TODO: 2. (2 pts)
+# DONE: 2. (2 pts)
 #
 #   Write a function called contains() that takes two parameters:
 #     - str (string)
@@ -33,8 +40,14 @@ txt = "The quick brown fox jumps over the lazy dog."
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
 
+def constaints(str, substr):
+    if substr in str: 
+        return True
+    else: 
+        return False
+
 ###############################################################################
-# TODO: 3. (3 pts)
+# DONE: 3. (3 pts)
 #
 #   Write a function called display_rating() that takes one parameter:
 #     - rating (float)
@@ -63,3 +76,15 @@ txt = "The quick brown fox jumps over the lazy dog."
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+
+def display_rating(rating):
+    if rating <= 5 or rating >= 4: 
+        print (f"Congratulations, you got a high score of {rating}!") 
+    elif rating <4 or rating >= 3: 
+        print (f"You recieved a score of {rating}.")
+    elif rating <3 or rating >= 2: 
+        print (f"You recieved a score of {rating}.")
+    elif rating <2 or rating >= 1: 
+        print (f"You could use some improvement. You recieved a score of {rating}.")
+    else: 
+        print ("Invalid score given.")
