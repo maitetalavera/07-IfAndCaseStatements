@@ -10,7 +10,6 @@ def multiply(first_param,second_param):
 def divide(first_param,second_param):
     return int(first_param)/int(second_param)
 
-
 ###############################################################################
 # DONE: 1. (4 pts)
 #
